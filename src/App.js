@@ -4,15 +4,15 @@ import React from "react";
 function App() {
   return (
     <header>
-      <nav className="nav-main">
-        <div className="nav-bar">
-          <h1 className="title-box">Lem Petro</h1>
-          <div className='menu'>
-            <h2>Home</h2>
-            <h2>Projects</h2>
-            <h2>About</h2>
-          </div>
+      <nav className="nav-bar">
+        <div className='Title'>
+          <h1>Lem / Petro</h1>
         </div>
+        <ul className='list-items'>
+          <li>Home</li>
+          <li>Projects</li>
+          <li>About</li>
+        </ul>
       </nav>
     </header>
   );
