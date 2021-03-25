@@ -2,8 +2,8 @@
   display: flex;
   background-color: #e5989b;
   height: 10vh;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between; */
+  /* align-items: center; */
 }
 
 .Title {
@@ -12,7 +12,8 @@
   height: 100%;
   justify-content: space-around;
   align-items: center;
-  font-size: 26px;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 .list-items {
@@ -26,5 +27,38 @@
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-top: 16px;;
+}
+
+.list-items a {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .line {
+    height: 4px;
+    width: 30px;
+    margin: 3px;
+    background: #222222;
+  }
+
+  .hamburgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 5vh;
+    order: 1;
+    cursor: pointer;
+  }
+
+  .list-items{
+    position: fixed;
+    background: #e5989b;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    display: none;
+  }
 }
